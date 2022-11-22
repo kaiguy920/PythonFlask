@@ -83,4 +83,6 @@ amount =len(grades)
 for grade in grades:
     total += grade 
 
+total2 = sum(grades)
+
 print(total / amount)
