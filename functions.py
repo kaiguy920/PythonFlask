@@ -69,5 +69,52 @@ x, y = t
 
 people = [("Bob", 42, "Mechanic"), ("James", 24, "Artist"), ("harry", 32, "Lecturer")]
 
-for name, age, profession in people:
-    print(f"Name: {name}, Age: {age}, Profession: {profession}")
+# for name, age, profession in people:
+#     print(f"Name: {name}, Age: {age}, Profession: {profession}")
+
+# for person in people:
+    # print(f"Name: {person[0]}, Age: {person[1]}, Profession: {person[2]}")
+
+# person = ("Bob", 42, "Mechanic")
+# _ variable in Python will be ignored
+# name, _, profession = person
+# print(name, profession) # ==> Bob Mechanic
+
+# //////////////////////////////////////////////////////////////////////
+# * all of the rest, the following
+# head, *tail = [1, 2, 3, 4, 5]
+# print(head)
+# print(tail)
+
+# ======================= FUNCTIONS =======================
+# def user_age_in_seconds():
+#     user_age = int(input("Enter your age: "))
+#     age_seconds = user_age * 365 * 24 * 60 *60
+#     print(f"Your age in seconds is {age_seconds}.")
+
+# print("Welcome to the age in seconds program!")
+# user_age_in_seconds()
+# print("Goodbye!")
+# //////////////////////////////////////////////////////////////////////
+ 
+def add(x,y):
+    # result = x + y
+    # print(result)
+    return x + y
+
+# add(5, 3)
+result = add(5, 3)
+print("add result", result)
+
+# //////////////////////////////////////////////////////////////////////
+
+def divide(dividend, divisor):
+    if divisor != 0:
+        # divide = dividend / divisor
+        # print(f'{divide:.2f}')
+        return dividend / divisor
+    else:
+        print("You fool!")
+result = divide(15, 3)
+print(result)
+# divide(dividend=15, divisor=7)
