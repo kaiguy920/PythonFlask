@@ -114,7 +114,8 @@ def divide(dividend, divisor):
         # print(f'{divide:.2f}')
         return dividend / divisor
     else:
-        print("You fool!")
+        # print("You fool!")
+        return "You fool!"
 result = divide(15, 3)
 print(result)
 # divide(dividend=15, divisor=7)
